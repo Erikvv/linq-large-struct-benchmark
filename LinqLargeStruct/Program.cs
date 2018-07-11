@@ -20,7 +20,7 @@ namespace LinqLargeStructBenchmark
         }
     }
 
-    // 68 byte struct
+    // 132 byte struct
     readonly struct LargeStruct
     {
         public readonly decimal a;
@@ -45,7 +45,7 @@ namespace LinqLargeStructBenchmark
             this.h = 8;
 
             this.i = i;
-        } 
+        }
     }
 
     class SmallClass
@@ -90,7 +90,7 @@ namespace LinqLargeStructBenchmark
         static void Main(string[] args)
         {
             Console.WriteLine("Benchmarking...");
-            
+
 
             var size = 10_000_000;
             var random = new Random();
