@@ -50,6 +50,8 @@ Filtering 10M to 9.999.995:
 * 8 byte class: 0.73 seconds
 * 136 byte class: 1,1 seconds
 
-We can see PHP has improved quite a bit. It is 2,5 times slower for small structs, but for large objects it is actually faster in 2 out of 3 scenarios.
+PHP 5.6 Filtering 10M to 5M, 8 byte class: 2,9 seconds
+
+We can see PHP has improved quite a bit. It is 2,5 times slower than C# for small structs, but for large objects it is actually faster in 2 out of 3 scenarios.
 
 Why it's faster than a large struct is easy to explain but why also in the case of C# classes? Possibly C# is attempting garbage collection during the benchmark?
